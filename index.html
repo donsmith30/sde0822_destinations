@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vacation Destinations</title>
 
     <!-- reset CSS -->
     <link
@@ -12,7 +12,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css"
     />
 
-    <!-- Bootstrap -->
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,12 +23,70 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <p class="btn btn-danger">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat similique
-      veniam asperiores iusto voluptatem animi magni qui, perferendis nisi
-      aperiam velit, dignissimos consequatur id numquam consequuntur dolorem
-      quam quaerat quasi.
-    </p>
+    <!-- green top -->
+    <div class="p-3 bg-light text-center" id="green_border">
+      <h1>Vacation Destinations WishList</h1>
+      <h6>
+        Found exciting places to visit on your next vacation? Use the form below
+        to add them to your wishList
+      </h6>
+    </div>
+
+    <div class="container overflow-hidden">
+      <div class="row">
+        <!-- red left side -->
+        <div id="red_border" class="col">
+          <!-- start form -->
+          <div id="formdest">
+            <label for="formInput1" class="form-label">Destination</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formInput1"
+              placeholder="Enter the name of the Destination"
+            />
+
+            <label for="formInput2" class="form-label">Location</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formInput2"
+              placeholder="Where is it located?"
+            />
+
+            <label for="formInput3" class="form-label">Photo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="formInput3"
+              placeholder="Enter an image URL of the place"
+            />
+
+            <label for="formInput4" class="form-label">Decription</label>
+            <label for="formInput4" class="form-label">Decription</label>
+            <textarea
+              class="form-control"
+              id="formInput4"
+              rows="3"
+              placeholder="Where is it located?"
+            ></textarea>
+            <br />
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-primary">Add to List</button>
+            </div>
+          </div>
+          <!-- end form-->
+        </div>
+        <!-- end red -->
+
+        <!-- blue right side -->
+        <div id="blue_border" class="col">
+          <div id="pink_border">Enter Destination Details</div>
+          <div id="yellow_border"></div>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
